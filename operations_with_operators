@@ -1,0 +1,38 @@
+number1 = int(input())
+number2 = int(input())
+operator = input()
+type_number = ""
+
+if operator == "+":
+    total = number1 + number2
+    if total % 2 == 0:
+        type_number = "even"
+    else:
+        type_number = "odd"
+    print(f"{number1} {operator} {number2} = {total} - {type_number}")
+elif operator == "-":
+    total = number1 - number2
+    if total % 2 == 0:
+        type_number = "even"
+    else:
+        type_number = "odd"
+    print(f"{number1} {operator} {number2} = {total} - {type_number}")
+elif operator == "*":
+    total = number1 * number2
+    if total % 2 == 0:
+        type_number = "even"
+    else:
+        type_number = "odd"
+    print(f"{number1} {operator} {number2} = {total} - {type_number}")
+elif operator == "/":
+    if number2 == 0:
+        print(f"Cannot divide {number1} by zero")
+    else:
+        total = number1 / number2
+        print(f"{number1} {operator} {number2} = {total:.2f}")
+elif operator == "%":
+    if number2 == 0:
+        print(f"Cannot divide {number1} by zero")
+    else:
+        total = number1 % number2
+        print(f"{number1} {operator} {number2} = {total}")
