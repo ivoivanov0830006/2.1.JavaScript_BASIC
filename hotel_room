@@ -1,0 +1,28 @@
+month = input()
+stays = int(input())
+studio = 0
+app = 0
+
+if month == "May" or month == "October":
+    studio = 50
+    app = 65
+    if 7 < stays <= 14:
+        studio = studio * 0.95
+    elif stays > 14:
+        studio = studio * 0.7
+        app = app * 0.9
+elif month == "June" or month == "September":
+    studio = 75.2
+    app = 68.7
+    if stays > 14:
+        studio = studio * 0.8
+        app = app * 0.9
+elif month == "July" or month == "August":
+    studio = 76
+    app = 77
+    if stays > 14:
+        app = app * 0.9
+total_studio = studio * stays
+total_app = app * stays
+print(f"Apartment: {total_app:.2f} lv.")
+print(f"Studio: {total_studio:.2f} lv.")
