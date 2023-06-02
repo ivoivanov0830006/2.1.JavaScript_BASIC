@@ -36,3 +36,33 @@ function shop(input) {
         else {
             validProduct = false
         }
+
+    // Weekend prices 
+    } else if (day === "Saturday" || 
+               day === "Sunday") {
+        if (product === "banana") {
+            price = 2.7;}
+        else if (product === "apple") {
+            price = 1.25;
+        }
+        else if (product === "orange") {
+            price = 0.9;
+        }
+        else if (product === "grapefruit") {
+            price = 1.6;
+        }
+        else if (product === "kiwi") {
+            price = 3;
+        }
+        else if (product === "pineapple") {
+            price = 5.6;
+        }
+        else if (product === "grapes") {
+            price = 4.2;
+        } 
+        else {
+            validProduct = false
+        }
+    } else {
+        validDay = false
+    }
