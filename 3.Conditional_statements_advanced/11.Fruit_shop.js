@@ -66,3 +66,14 @@ function shop(input) {
     } else {
         validDay = false
     }
+
+    if (validDay && validProduct) {
+        let total = price * quantity
+        console.log(total.toFixed(2))
+    } else {
+        console.log("error")
+    }
+
+}
+
+shop(["kiwi","Sunday","2.5"])
