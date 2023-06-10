@@ -23,3 +23,34 @@ function exam(input) {
                 needBrake = true;
                 break;
             }
+        }
+        // All Calculations
+        lastProblem = currentProblem;
+        totalScore += currentScore;
+        allProblemsCount += 1
+
+        // Reading New Input Data
+        currentProblem = input[index];
+        currentScore = Number(input[index + 1]);
+        index += 2;
+    } 
+
+    // Second Case: Result 
+    if (needBrake) {
+        console.log(`You need a break, ${badScoresLimit} poor grades.`)
+    // First Case: Result
+    } else {
+        let averageScore = totalScore / allProblemsCount
+        console.log(`Average score: ${averageScore.toFixed(2)}`)
+        console.log(`Number of problems: ${allProblemsCount}`)
+        console.log(`Last problem: ${lastProblem}`)
+    }
+}
+
+exam(["2",
+"Income",
+"3",
+"Game Info",
+"6",
+"Best Player",
+"4"])
