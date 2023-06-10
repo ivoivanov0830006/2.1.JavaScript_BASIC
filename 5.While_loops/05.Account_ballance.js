@@ -18,3 +18,8 @@ function ballance(input) {
     }
     console.log(`Total: ${totalBallance.toFixed(2)}`)
 }
+
+ballance(["5.51",
+"69.42",
+"100",
+"NoMoreMoney"])
