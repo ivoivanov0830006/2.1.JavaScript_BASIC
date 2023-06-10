@@ -23,3 +23,10 @@ function books(input) {
         console.log(`The book you search is not here!\nYou checked ${checkedBooks} books.`)
     }
 }
+
+books(["The Spot",
+"Hunger Games",
+"Harry Potter",
+"Torronto",
+"Spotify",
+"No More Books"])
