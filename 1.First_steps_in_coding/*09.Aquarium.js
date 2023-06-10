@@ -11,7 +11,7 @@ function calculate(input) {
     // Total Cubic Liters Calculation
     let totalLiters = (aquariumVolume - aquariumVolume * (percentage / 100)) / 1000
 
-    // Total Expenses
+    // Total
     console.log(totalLiters);
 }
 
