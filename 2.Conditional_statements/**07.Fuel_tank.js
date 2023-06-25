@@ -52,3 +52,32 @@ function tank(input) {
 }
 
 tank(["Diesel", "10"])
+
+/////////////////////////////////////////////////////////////////
+//// ---------- SOLUTION 3 - WITH INCLUDES METHOD ---------- ////
+/////////////////////////////////////////////////////////////////
+
+function tank(input) {
+    let inputFuel = input[0];
+    let quantity = Number(input[1]);
+    let possibleFuel = ["Diesel", "Gasoline", "Gas"];
+    let fuel = "";
+
+    switch(inputFuel) {
+        case "Diesel": fuel = "diesel"; break
+        case "Gasoline": fuel = "gasoline"; break
+        case "Gas": fuel = "gas"; break;
+    }
+
+    if (possibleFuel.includes(inputFuel)) {
+        if (quantity >= 25) {
+            console.log(`You have enough ${fuel}.`)
+        } else {
+            console.log(`Fill your tank with ${fuel}!`)
+        }
+    } else {
+        console.log(`Invalid fuel!`);
+    }
+}
+
+tank(["Diesel", "10"])
