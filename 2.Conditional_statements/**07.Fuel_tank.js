@@ -30,3 +30,25 @@ function tank(input) {
 }
 
 tank(["Diesel", "10"])
+
+/////////////////////////////////////////////////////////////////
+//// --------- SOLUTION 2 - WITH LOWERCASE METHOD ---------- ////
+/////////////////////////////////////////////////////////////////
+
+function tank(input) {
+    let inputFuel = input[0];
+    let quantity = Number(input[1]);
+    let fuel = inputFuel.toLowerCase();
+
+    if (fuel === "diesel" || fuel === "gasoline" || fuel === "gas") {
+        if (quantity >= 25) {
+            console.log(`You have enough ${fuel}.`)
+        } else {
+            console.log(`Fill your tank with ${fuel}!`)
+        } 
+    } else {
+        console.log(`Invalid fuel!`);
+    }
+}
+
+tank(["Diesel", "10"])
