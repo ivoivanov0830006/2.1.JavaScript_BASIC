@@ -23,7 +23,8 @@ function tickets(input) {
         discount = 0.4;
     } else {
         discount = 0.25;
-
+    }
+    
     let transportCost = budget * discount;
     let currentMoney = budget - transportCost;
 
