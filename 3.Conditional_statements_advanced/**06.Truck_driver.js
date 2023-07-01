@@ -32,3 +32,57 @@ function driver(input) {
 }
 
 driver(["Summer","3455"])
+
+
+// -------------------------- Another Solution -------------------------
+//
+// function driver(input) {
+ 
+//     let season = input[0];
+//     let km = Number(input[1]);
+ 
+//     payCheck = 0;
+//     salary = 0;
+ 
+//     if (km <= 5000) {
+//         switch (season) {
+//             case 'Spring':
+//             case 'Autumn':
+//                 payCheck = (km * 0.75) * 4;
+//                 break;
+//             case "Summer":
+//                 payCheck = (km * 0.90) * 4;
+//                 break;
+//             case "Winter":
+//                 payCheck = (km * 1.05) * 4;
+//                 break;
+//         }
+//     } else if (km <= 10000) {
+//         switch (season) {
+//             case 'Spring':
+//             case 'Autumn':
+//                 payCheck = (km * 0.95) * 4;
+//                 break;
+//             case "Summer":
+//                 payCheck = (km * 1.10) * 4;
+//                 break;
+//             case "Winter":
+//                 payCheck = (km * 1.25) * 4;
+//                 break;
+//         }
+//     } else if (km <= 20000) {
+//         switch (season) {
+//             case 'Spring':
+//             case 'Autumn':
+//             case "Summer":
+//             case "Winter":
+//                 payCheck = (km * 1.45) * 4;
+//                 break;
+//         }
+ 
+//     }
+//     salary = payCheck * 0.9;
+//     console.log(salary.toFixed(2));
+ 
+// }
+// driver(["Winter", "4350"])
