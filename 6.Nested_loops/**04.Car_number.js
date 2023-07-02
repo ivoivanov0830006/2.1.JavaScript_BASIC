@@ -18,3 +18,6 @@ function carNumber(input) {
     }
     console.log(result)
 }
+
+carNumber(["2",
+    "3"])
