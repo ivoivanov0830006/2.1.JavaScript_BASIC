@@ -18,3 +18,7 @@ function letters(input) {
     }
     console.log(`${finalResult}${totalCombinations}`)
 }
+
+letters(["a",
+    "c",
+    "b"])
