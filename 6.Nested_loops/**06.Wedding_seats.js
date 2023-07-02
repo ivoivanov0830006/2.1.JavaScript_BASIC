@@ -27,3 +27,7 @@ function seats(input) {
     }
     console.log(totalCount)
 }
+
+seats(["B",
+    "3",
+    "2"])
