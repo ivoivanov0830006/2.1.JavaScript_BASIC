@@ -53,3 +53,18 @@ function report(input) {
         console.log(`Failed to collect required money for charity.`)
     }
 }
+
+report(["500",
+    "120",
+    "8",
+    "63",
+    "256",
+    "78",
+    "317"])
+
+report(["600",
+    "86",
+    "150",
+    "98",
+    "227",
+    "End"])
