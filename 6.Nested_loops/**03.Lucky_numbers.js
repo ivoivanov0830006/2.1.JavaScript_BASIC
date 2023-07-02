@@ -17,3 +17,5 @@ function lucky(input) {
     }
     console.log(result)
 }
+
+lucky(["3"])
