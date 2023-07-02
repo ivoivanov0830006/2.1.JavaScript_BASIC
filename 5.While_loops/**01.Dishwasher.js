@@ -39,3 +39,17 @@ function dishwasher(input) {
         console.log(`Not enough detergent, ${difference} ml. more necessary!`)
     }
 }
+
+dishwasher(["2",
+    "53",
+    "65",
+    "55",
+    "End"])
+
+dishwasher(["1",
+    "10",
+    "15",
+    "10",
+    "12",
+    "13",
+    "30"])
