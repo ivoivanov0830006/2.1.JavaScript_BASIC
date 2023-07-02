@@ -15,3 +15,8 @@ function codes(input) {
         }
     }
 }
+
+
+codes(["3",
+    "5",
+    "5"])
