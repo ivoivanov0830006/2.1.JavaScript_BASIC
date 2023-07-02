@@ -23,3 +23,7 @@
     }
     console.log(result)
 }
+
+wedding(["2",
+    "2",
+    "3"])
